@@ -1,0 +1,16 @@
+Last updated May 24th, 2017
+
+Per instructions from Box here:
+
+    https://developer.box.com/docs/authentication-with-jwt#section-3-grant-access-in-enterprise-admin-console
+
+This assumes you have Firebase in your path/able to be used by your app or script
+
+    ("firebase/php-jwt": "dev-master" in your composer.json should do the trick)
+
+I generated the public/private keys with this command:
+
+    openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout box_private.key -out box_certificate_pub.crt
+
+upload box_certificate_pub.crt to the console, and keep the private key for encoding/decoding locally.
+
