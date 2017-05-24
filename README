@@ -14,3 +14,17 @@ I generated the public/private keys with this command:
 
 upload box_certificate_pub.crt to the console, and keep the private key for encoding/decoding locally.
 
+If successful, the response/print out should be something like:
+
+    stdClass Object
+    (
+        [access_token] => 9cRs9MT09243243223432hfuidsafjTRhUbaZPd3
+        [expires_in] => 3708
+        [restricted_to] => Array
+            (
+            )
+
+        [token_type] => bearer
+    )
+  
+
